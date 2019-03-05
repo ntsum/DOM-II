@@ -56,9 +56,11 @@ btnsOmg[0].addEventListener('mousemove', function(){
 });
 btnsOmg[1].addEventListener('mousemove', function(){
     btnsOmg[1].textContent = "M"
+    
 });
 btnsOmg[2].addEventListener('mousemove', function(){
     btnsOmg[2].textContent = "G"
+    
 });
 //9contextmenu
 btnsOmg.forEach(function(e){
@@ -74,3 +76,13 @@ destination.forEach(function(e){
         e.style.color = 'gray'; 
      });
     })
+
+
+
+//stretch
+const para = document.querySelectorAll("p");
+TweenMax.to(para, 0.2, {scale:5, ease:Bounce.easeOut})
+TweenMax.to(para, 0.2, {scale:1, delay:0.5})
+
+
+
